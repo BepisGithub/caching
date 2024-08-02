@@ -7,9 +7,9 @@ services:
     environment:
       REDIS_HOST: redis
       REDIS_PORT: 6379
+      REDIS_PASSWORD: ""
     depends_on:
       - redis
-
   redis:
     container_name: redis
     image: redis
